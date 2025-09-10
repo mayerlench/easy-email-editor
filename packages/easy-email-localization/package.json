@@ -1,8 +1,8 @@
 {
-  "name": "easy-email-localization",
+  "name": "@cubxinc/easy-email-localization",
   "license": "MIT",
   "description": "Email editor",
-  "version": "4.16.1",
+  "version": "4.16.5",
   "author": "m-Ryan",
   "keywords": [],
   "files": [
