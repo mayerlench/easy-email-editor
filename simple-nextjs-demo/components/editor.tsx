@@ -16,14 +16,14 @@ import {
   EmailEditorProvider,
   IEmailTemplate,
   Stack,
-} from 'easy-email-editor';
+} from '@cubxinc/easy-email-editor';
 
-import { AdvancedType, IBlockData, JsonToMjml } from 'easy-email-core';
-import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
+import { AdvancedType, IBlockData, JsonToMjml } from '@cubxinc/easy-email-core';
+import { ExtensionProps, StandardLayout } from '@cubxinc/easy-email-extensions';
 
 import '@arco-themes/react-easy-email-theme/css/arco.css';
-import 'easy-email-editor/lib/style.css';
-import 'easy-email-extensions/lib/style.css';
+import '@cubxinc/easy-email-editor/lib/style.css';
+import '@cubxinc/easy-email-extensions/lib/style.css';
 
 import enUS from '@arco-design/web-react/es/locale/en-US';
 import { useRouter, useSearchParams } from 'next/navigation';

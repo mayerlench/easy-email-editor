@@ -2,10 +2,18 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "@": ["./src"],
-      "@/*": ["./src/*"],
-      "easy-email-core": ["../easy-email-core"],
-      "react": ["./node_modules/@types/react"]
+      "@": [
+        "./src"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@cubxinc/easy-email-core": [
+        "../easy-email-core"
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ]
     }
   }
 }

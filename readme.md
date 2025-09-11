@@ -55,9 +55,9 @@ $ npm install --save easy-email-core easy-email-editor easy-email-extensions rea
 
 ```js
 import React from 'react';
-import { BlockManager, BasicType, AdvancedType } from 'easy-email-core';
-import { EmailEditor, EmailEditorProvider } from 'easy-email-editor';
-import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
+import { BlockManager, BasicType, AdvancedType } from '@cubxinc/easy-email-core';
+import { EmailEditor, EmailEditorProvider } from '@cubxinc/easy-email-editor';
+import { ExtensionProps, StandardLayout } from '@cubxinc/easy-email-extensions';
 
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';

@@ -6,7 +6,7 @@ import { IframeComponent } from '@/client/components/IframeComponent';
 import mjml from 'mjml-browser';
 import { IconDesktop, IconMobile } from '@arco-design/web-react/icon';
 import styles from './index.module.less';
-import { IEmailTemplate } from 'easy-email-editor';
+import { IEmailTemplate } from '@cubxinc/easy-email-editor';
 import { JsonToMjml } from 'easy-email-core';
 import { useCreateEmailTemplateMutation } from '@/client/hooks';
 import { Liquid } from 'liquidjs';

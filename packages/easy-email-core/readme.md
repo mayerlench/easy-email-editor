@@ -15,7 +15,7 @@ $ yarn add easy-email-core
 ## transform json to mjml
 
 ```ts
-import { JsonToMjml } from 'easy-email-core';
+import { JsonToMjml } from '@cubxinc/easy-email-core';
 
 const xml = JsonToMjml({
   data: json,
@@ -246,7 +246,7 @@ import {
   JsonToMjml,
   BasicType,
   BlockManager,
-} from 'easy-email-core';
+} from '@cubxinc/easy-email-core';
 const { Section, Column, Image, Button } = components;
 
 type IMyFirstBlock = IBlockData<

@@ -4,7 +4,7 @@ import { Message } from '@arco-design/web-react';
 import { history } from '@demo/utils/history';
 import { emailToImage } from '@demo/utils/emailToImage';
 import { IBlockData, BlockManager, BasicType, AdvancedType } from 'easy-email-core';
-import { IEmailTemplate } from 'easy-email-editor';
+import { IEmailTemplate } from '@cubxinc/easy-email-editor';
 import { getTemplate } from '@demo/config/getTemplate';
 
 export function getAdaptor(data: IArticle): IEmailTemplate {
