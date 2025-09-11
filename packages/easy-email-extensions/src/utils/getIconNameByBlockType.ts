@@ -1,4 +1,4 @@
-import { BasicType, AdvancedType } from 'easy-email-core';
+import { BasicType, AdvancedType } from '@cubxinc/easy-email-core';
 import { get } from 'lodash';
 
 let iconsMap = {
@@ -40,5 +40,5 @@ export function getIconNameByBlockType(type: string) {
 }
 
 export function setIconsMap(map: Record<string, string>) {
-  iconsMap = {...iconsMap, ...map};
+  iconsMap = { ...iconsMap, ...map };
 }

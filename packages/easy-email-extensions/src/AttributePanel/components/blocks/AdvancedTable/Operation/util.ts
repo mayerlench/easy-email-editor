@@ -1,6 +1,6 @@
-import { DATA_CONTENT_EDITABLE_IDX } from 'easy-email-editor';
+import { DATA_CONTENT_EDITABLE_IDX } from '@cubxinc/easy-email-editor';
 import { IBoundaryRect, IBoundingPosition, IOperationData } from './type';
-import { AdvancedTableBlock } from 'easy-email-core';
+import { AdvancedTableBlock } from '@cubxinc/easy-email-core';
 
 const getEditorElementClientRect = (target: any) => {
   let left = target.offsetLeft;

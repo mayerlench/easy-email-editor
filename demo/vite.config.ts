@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import path from 'path';
-import { injectHtml } from 'vite-plugin-html';
+import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
   server: {
@@ -20,13 +20,17 @@ export default defineConfig({
       '@core': path.resolve('../packages/easy-email-core/src'),
       '@arco-themes': path.resolve('./node_modules/@arco-themes'),
       '@': path.resolve('../packages/easy-email-editor/src'),
-      'easy-email-core': path.resolve('../packages/easy-email-core/src/index.tsx'),
+      '@cubxinc/easy-email-core': path.resolve(
+        '../packages/easy-email-core/src/index.tsx',
+      ),
       'easy-email-editor/lib/locales.json': path.resolve(
         '../packages/easy-email-editor/public/locales.json',
       ),
       'easy-email-localization': path.resolve('../packages/easy-email-localization'),
-      'easy-email-editor': path.resolve('../packages/easy-email-editor/src/index.tsx'),
-      'easy-email-extensions': path.resolve(
+      '@cubxinc/easy-email-editor': path.resolve(
+        '../packages/easy-email-editor/src/index.tsx',
+      ),
+      '@cubxinc/easy-email-extensions': path.resolve(
         '../packages/easy-email-extensions/src/index.tsx',
       ),
       '@arco-design/web-react/dist/css/arco.css': path.resolve(
@@ -57,7 +61,7 @@ export default defineConfig({
             return 'mjml-browser';
           }
           if (/easy-email.*/.test(id)) {
-            return 'easy-email-editor';
+            return '@cubxinc/easy-email-editor';
           }
         },
       },
@@ -75,11 +79,13 @@ export default defineConfig({
     },
   },
   plugins: [
-    reactRefresh(),
+    react(),
 
-    injectHtml({
-      data: {
-        buildTime: `<meta name="updated-time" content="${new Date().toUTCString()}" />`,
+    createHtmlPlugin({
+      inject: {
+        data: {
+          buildTime: `<meta name="updated-time" content="${new Date().toUTCString()}" />`,
+        },
       },
     }),
   ].filter(Boolean),

@@ -1,5 +1,5 @@
 import { blocks } from '../components/blocks';
-import { ReactNode } from 'react';
+import { ReactNode, JSX } from 'react';
 
 type ObjectComponent = { [key: string]: (...args: any) => ReactNode };
 

@@ -31,7 +31,7 @@ export const RecordProvider: React.FC<{ children?: React.ReactNode }> = props =>
   const indexRef = useRefState(index);
 
   const statusRef = useRef<RecordStatus>(undefined);
-  const currentData = useRef<IEmailTemplate>();
+  const currentData = useRef<IEmailTemplate>(null);
 
   if (index >= 0 && data.length > 0) {
     currentData.current = data[index];
