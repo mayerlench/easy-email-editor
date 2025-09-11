@@ -1,4 +1,4 @@
-import { BlockManager } from 'easy-email-core';
+import { BlockManager } from '@cubxinc/easy-email-core';
 import { BlockAttributeConfigurationManager } from '@cubxinc/easy-email-extensions';
 import { CustomBlocksType } from './constants';
 import {

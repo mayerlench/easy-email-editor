@@ -11,8 +11,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      'easy-email-editor/lib/style.css': path.resolve(__dirname, 'package.json'), // 没有用的，只是防止css 404报错
-      'easy-email-extensions/lib/style.css': path.resolve(__dirname, 'package.json'), // 没有用的，只是防止css 404报错
+      '@cubxinc/easy-email-editor/lib/style.css': path.resolve(__dirname, 'package.json'), // 没有用的，只是防止css 404报错
+      '@cubxinc/easy-email-extensions/lib/style.css': path.resolve(
+        __dirname,
+        'package.json',
+      ), // 没有用的，只是防止css 404报错
       react: path.resolve('./node_modules/react'),
       'react-final-form': path.resolve(__dirname, './node_modules/react-final-form'),
       '@demo': path.resolve(__dirname, './src'),
